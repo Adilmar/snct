@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Enviar evento :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 1%">
+	   <center><img src="images/logo.png" style="max-width:70%;height:auto;"/></center>
+        <h4>Onde tem ciência?</h4>
+		
+		
+       <form method="post" action="cadastrap.php" enctype = "multipart/form-data">
+  <div class="row">
+    <div class="six columns">
+	<label for="evento">Onde ?</label>
+      <input class="u-full-width" placeholder="Museu Dica" id="evento" required="true" name="evento">
+      <label for="nome">Seu nome</label>
+      <input class="u-full-width" placeholder="Zezinho" id="nome" required="true" name="nome">
+    </div>
+    <div class="six columns">
+      <!--<label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width" id="exampleRecipientInput">
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Admiration</option>
+        <option value="Option 3">Can I get your number?</option>
+      </select>-->
+    </div>
+  </div>
+  <label for="mensagem">Mensagem sobre o evento</label>
+  <textarea class="u-full-width" placeholder="Muito divertido…" id="mensagem" name="mensagem"></textarea>
+  <label for="evento">Envie uma foto :)</label>
+   <input class="u-full-width" placeholder="Museu Dica" id="arquivo" required="true" type="file" accept="image/*" capture="camera" name="arquivo">
+  <input class="button-primary" value="Enviar" type="submit" >
+</form>
+
+<!-- Always wrap chec
+	  
+	  </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
