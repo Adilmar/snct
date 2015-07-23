@@ -15,7 +15,8 @@
         Adilmar Coelho Dantas
     </author>
 	
-	<preference name="stay-in-webview" value="true" /> 
+	<preference name="stay-in-webview" value="true" />
+ 
 		
 	 <!-- Core plugins -->
 <gap:plugin name="org.apache.cordova.battery-status" />
