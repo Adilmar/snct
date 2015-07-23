@@ -5,12 +5,8 @@
         versionCode="1" 
         version   = "1.0.0">
 		
-
-    <!-- versionCode is optional and Android only -->
-
     <name>SNCT</name>
 	
-
     <description>
       Aplicativo da Semana Nacional de Ciência e Tecnologia
     </description>
@@ -20,9 +16,7 @@
     </author>
 	
 	<preference name="stay-in-webview" value="true" /> 
-	
-	
-	
+		
 	 <!-- Core plugins -->
 <gap:plugin name="org.apache.cordova.battery-status" />
 <gap:plugin name="org.apache.cordova.camera" />
@@ -42,16 +36,24 @@
 <gap:plugin name="org.apache.cordova.network-information" />
 <gap:plugin name="org.apache.cordova.splashscreen" />
 <gap:plugin name="org.apache.cordova.vibration" />
-	
-	 <!-- Define app icon for each platform. -->
-    <icon src="icon.png" />
-    <icon src="icon.png"   gap:platform="android"    gap:density="ldpi" />
-    <icon src="icon.png"   gap:platform="android"    gap:density="mdpi" />
-    <icon src="icon.png"   gap:platform="android"    gap:density="hdpi" />
-    <icon src="icon.png"   gap:platform="android"    gap:density="xhdpi" />
-    <icon src="icon.png"   gap:platform="webos" />
-    <icon src="icon.png"   gap:platform="winphone" />
-    <icon src="icon.png"   gap:platform="winphone"   gap:role="background" />
+
+
+<!-- SPLASH SCREENS -->
+<gap:splash src="images/splash.jpg" /> <!-- default 320x480 pixels -->
+<gap:splash src="images/splash1.jpg" gap:platform="android" gap:density="ldpi" /> <!-- 200x320 -->
+<gap:splash src="images/splash2.jpg" gap:platform="android" gap:density="mdpi" /> <!-- 320x480 -->
+<gap:splash src="images/splash3.jpg" gap:platform="android" gap:density="hdpi" /> <!-- 480x800 -->
+<gap:splash src="images/splash4.jpg" gap:platform="android" gap:density="xhdpi" /> <!-- 720x1280 -->
+
+<!-- Define app icon for each platform. -->
+<icon src="icon.png" />
+<icon src="icon.png"   gap:platform="android"    gap:density="ldpi" />
+<icon src="icon.png"   gap:platform="android"    gap:density="mdpi" />
+<icon src="icon.png"   gap:platform="android"    gap:density="hdpi" />
+<icon src="icon.png"   gap:platform="android"    gap:density="xhdpi" />
+<icon src="icon.png"   gap:platform="webos" />
+<icon src="icon.png"   gap:platform="winphone" />
+<icon src="icon.png"   gap:platform="winphone"   gap:role="background" />
 	
 
 </widget>
